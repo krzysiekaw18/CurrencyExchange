@@ -35,7 +35,9 @@ class AccountDaoTest {
     void shouldCorrectMapFromDomainToEntity() {
         //given
         final ArgumentCaptor<AccountEntity> accountEntityArgumentCaptor = ArgumentCaptor.forClass(AccountEntity.class);
-        when(accountRepository.save(any())).thenReturn(AccountId.of(1));
+        when(accountRepository.save(any())).thenReturn(AccountEntity.builder()
+                                                                    .id(1L)
+                                                                    .build());
 
         //when
         dao.createNewAccount(new Account(AccountId.of(33),
