@@ -1,0 +1,28 @@
+databaseChangeLog:
+  - changeSet:
+      id: "2"
+      author: "kstuglik"
+      changes:
+        - createTable:
+            tableName: "USER_DETAILS"
+            columns:
+              - column:
+                  name: "ID"
+                  type: "BIGINT"
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: "FIRST_NAME"
+                  type: "VARCHAR(100)"
+                  constraints:
+                    nullable: false
+              - column:
+                  name: "LAST_NAME"
+                  type: "VARCHAR(100)"
+                  constraints:
+                    nullable: false
+        - createSequence:
+            sequenceName: "USER_SEQ"
+            minValue: 1
+            incrementBy: 50

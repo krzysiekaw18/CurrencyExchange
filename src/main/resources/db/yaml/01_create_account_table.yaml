@@ -1,0 +1,35 @@
+databaseChangeLog:
+  - changeSet:
+      id: "1"
+      author: "kstuglik"
+      changes:
+        - createTable:
+            tableName: "ACCOUNT"
+            columns:
+              - column:
+                  name: "ID"
+                  type: "BIGINT"
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: "USER_ID"
+                  type: "BIGINT"
+                  constraints:
+                    nullable: false
+              - column:
+                  name: "PLN_BALANCE"
+                  type: "DECIMAL(17, 2)"
+                  constraints:
+                    nullable: false
+              - column:
+                  name: "USD_BALANCE"
+                  type: "DECIMAL(17, 2)"
+                  constraints:
+                    nullable: false
+        - createIndex:
+            indexName: "USER_ID_IDX"
+            tableName: "ACCOUNT"
+            columns:
+              - column:
+                  name: "USER_ID"
