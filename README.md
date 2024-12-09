@@ -7,7 +7,7 @@
 ### Uruchomienie
 1. Najpierw musisz sklonować repozytorium z kodem źródłowym aplikacji. Użyj poniższej komendy w terminalu:
 ```markdown
-git clone ścieżka do repo
+git clone https://github.com/krzysiekaw18/CurrencyExchange.git
 ```
 2. Po sklonowaniu repozytorium przejdź do katalogu projektu. Użyj poniższej komendy:
 ```markdown
