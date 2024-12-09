@@ -11,7 +11,7 @@ git clone https://github.com/krzysiekaw18/CurrencyExchange.git
 ```
 2. Po sklonowaniu repozytorium przejdź do katalogu projektu. Użyj poniższej komendy:
 ```markdown
-cd ścieżka do projektu
+cd CurrencyExchange
 ```
 3. Aby zbudować apliakcję użyj komendy:
 ```markdown
